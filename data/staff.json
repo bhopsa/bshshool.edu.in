@@ -1,0 +1,14 @@
+[
+  {
+    "name": "शिक्षक 1",
+    "role": "प्रधान अध्यापक",
+    "photo": "assets/img/teacher1.jpg",
+    "bio": "अनुभवी शिक्षक"
+  },
+  {
+    "name": "शिक्षक 2",
+    "role": "गणित शिक्षक",
+    "photo": "assets/img/teacher2.jpg",
+    "bio": "विशेषज्ञ"
+  }
+]

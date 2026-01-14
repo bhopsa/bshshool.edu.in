@@ -1,0 +1,49 @@
+backend:
+  name: github
+  repo: bhopsa/bshshool.edu.in
+  branch: main
+
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+collections:
+  - name: "site"
+    label: "Site Settings"
+    files:
+      - file: "data/site.json"
+        label: "Site Data"
+        name: "site_data"
+        fields:
+          - {label: "School Name", name: "name", widget: "string"}
+          - {label: "Tagline", name: "tagline", widget: "string"}
+          - {label: "Address", name: "address", widget: "text"}
+          - {label: "Phone", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Logo", name: "logo", widget: "image"}
+          - {label: "About Text", name: "about", widget: "text"}
+
+  - name: "staff"
+    label: "Staff"
+    files:
+      - file: "data/staff.json"
+        label: "Staff List"
+        name: "staff_list"
+        fields:
+          - {label: "Staff", name: "staff", widget: "list", fields:[
+              {label:"Name", name:"name", widget:"string"},
+              {label:"Role", name:"role", widget:"string"},
+              {label:"Photo", name:"photo", widget:"image"},
+              {label:"Bio", name:"bio", widget:"text"}
+            ]}
+
+  - name: "gallery"
+    label: "Gallery"
+    files:
+      - file: "data/gallery.json"
+        label: "Gallery Images"
+        name: "gallery_images"
+        fields:
+          - {label: "Images", name: "images", widget: "list", fields:[
+              {label:"Title", name:"title", widget:"string"},
+              {label:"Image", name:"image", widget:"image"}
+            ]}
